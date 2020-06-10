@@ -1,0 +1,353 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "console": "internalConsole",
+            "mainClass": "${file}"
+        },
+            
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AbsVal<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "AbsVal",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AccountTest<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "AccountTest",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BMI<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "BMI",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Best<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "Best",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CircleTest<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "CircleTest",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CircumFTest<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "CircumFTest",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CompInt<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "CompInt",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CompNum<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "CompNum",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DateTest<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "DateTest",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Dialog1<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "Dialog1",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Divisible<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "Divisible",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Divzero<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "Divzero",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-EmployeeTest<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "EmployeeTest",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Ex216<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "Ex216",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Ex28<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "Ex28",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Exercise1<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "Exercise1",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Exercise2<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "Exercise2",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Exercise3<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "Exercise3",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Exercise4<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "Exercise4",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Factor<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "Factor",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Factorial<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "Factorial",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Firstprogram<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "Firstprogram",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GasMile<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "GasMile",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Grade<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "Grade",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GradeBookTest<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "GradeBookTest",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Helloworld<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "Helloworld",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InchesConverter<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "InchesConverter",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InputTest<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "InputTest",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Jag<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "Jag",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LeapYear<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "LeapYear",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Love<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "Love",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NameDialog<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "NameDialog",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NameTest<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "NameTest",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-OddEven<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "OddEven",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Overtime<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "Overtime",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Power<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "Power",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "Practice",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PrimNum<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "PrimNum",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PrimNum2<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "PrimNum2",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RectangleTest<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "RectangleTest",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ReverseNum<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "ReverseNum",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RightTriangle<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "RightTriangle",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SquareCube<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "SquareCube",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StudentTest<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "StudentTest",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TimeConverter<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "TimeConverter",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Typecast<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "Typecast",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-howToVS<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "howToVS",
+            "projectName": "Java Practice_f8ef083c"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-sumOdd<Java Practice_f8ef083c>",
+            "request": "launch",
+            "mainClass": "sumOdd",
+            "projectName": "Java Practice_f8ef083c"
+        }
+    ]
+}

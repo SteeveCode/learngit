@@ -1,0 +1,82 @@
+1 // Fig. 4.9: GradeBook.java
+2 // GradeBook class that solves the class-average problem using
+3 // sentinel-controlled repetition.
+4 import java.util.Scanner; // program uses class Scanner
+5
+6 public class GradeBook
+7 {
+8 private String courseName; // name of course this GradeBook represents
+9
+10 // constructor initializes courseName
+11 public GradeBook( String name )
+12 {
+13 courseName = name; // initializes courseName
+14 } // end constructor
+15
+16 // method to set the course name
+17 public void setCourseName( String name )
+18 {
+19 courseName = name; // store the course name
+20 } // end method setCourseName
+21
+22 // method to retrieve the course name
+23 public String getCourseName()
+24 {
+25 return courseName;
+26 } // end method getCourseName
+27
+28 // display a welcome message to the GradeBook user
+29 public void displayMessage()
+30 {
+31 // getCourseName gets the name of the course
+32 System.out.printf( "Welcome to the grade book for\n%s!\n\n",
+33 getCourseName() );
+34 } // end method displayMessage
+35
+36 // determine the average of an arbitrary number of grades
+37 public void determineClassAverage()
+38 {
+39 // create Scanner to obtain input from command window
+40 Scanner input = new Scanner( System.in );
+41
+42 int total; // sum of grades
+43 int gradeCounter; // number of grades entered
+44 int grade; // grade value
+45 double average; // number with decimal point for average
+46
+47 // initialization phase
+48 total = 0; // initialize total
+49 gradeCounter = 0; // initialize loop counter
+50
+51 // processing phase
+52 // prompt for input and read grade from user
+53 System.out.print( "Enter grade or -1 to quit: " );
+54 grade = input.nextInt();
+55
+56 // loop until sentinel value read from user
+57 while ( grade != -1 )
+58 {
+59 total = total + grade; // add grade to total
+60 gradeCounter = gradeCounter + 1; // increment counter
+61
+62 // prompt for input and read next grade from user
+63 System.out.print( "Enter grade or -1 to quit: " );
+64 grade = input.nextInt();
+65 } // end while
+66
+67 // termination phase
+68 // if user entered at least one grade...
+69 if( gradeCounter != 0)
+70 {
+71 // calculate average of all grades entered
+72 average = (double) total / gradeCounter;
+73
+74 // display total and average (with two digits of precision)
+75 System.out.printf( "\nTotal of the %d grades entered is %d\n",
+76 gradeCounter, total );
+77 System.out.printf( "Class average is %.2f\n", average );
+78 } // end if
+79 else // no grades were entered, so output appropriate message
+80 System.out.println( "No grades were entered" );
+81 } // end method determineClassAverage
+82 } // end class GradeBook
