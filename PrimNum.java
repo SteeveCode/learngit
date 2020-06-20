@@ -1,4 +1,4 @@
-//Program to calculate a prime number
+//Program to check for  a prime number
 
 import java.util.Scanner;
 

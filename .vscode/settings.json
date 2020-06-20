@@ -4,5 +4,6 @@
         "**/.project": false,
         "**/.settings": false,
         "**/.factorypath": false
-    }
+    },
+    "files.autoSave": "afterDelay"
 }

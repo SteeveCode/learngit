@@ -26,15 +26,15 @@ public class Palindrome {
 				tempNum = tempNum/10;
 		}
 		
-			if(num == reverse)
-				System.out.printf("The number %d is a palindrome",num); // e.g: 12321, 55555, 45554 and 11611 are five digit palindrome.
-			else
-				System.out.printf("The number %d is not a palindrome",num);
-			break;
+		if(num == reverse)
+			System.out.printf("The number %d is a palindrome",num); // e.g: 12321, 55555, 45554 and 11611 are five digit palindrome.
+		else
+			System.out.printf("The number %d is not a palindrome",num);
+		break;
 		}
 		else
-			System.out.print("The number entered is not up to five digits. Please,enter number again: ");
-		continue;
+			System.out.print("The number entered is not up to five digits. Please,enter number again: \n");
+		//continue;
 		
 		
 		}
