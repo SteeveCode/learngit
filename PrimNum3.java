@@ -1,16 +1,16 @@
-//Program to test for a prime number using half of n method. Although, this code also has a time complexity of O(n), it is much more efficient than 
-//the previous method because the number of iteration is reduced to half of the given number.
+//Program to test for a prime number using square root of n method.This code has a time  complexity of O(√n) hence it is 
+//much more efficient than the previous two methods because the number of iteration is reduced to square root of the number.
 
 import java.util.Scanner;
 
-public class PrimNum2{
+public class PrimNum3{
 
 public static void main(String []args){
 System.out.println("Enter any number");
 Scanner input = new Scanner(System.in);
 int num = input.nextInt();
 int flag = 0;
-for(int j=2; j<=num/2;j++){
+for(int j=2; j<=(int)Math.sqrt(num);j++){
 	
 	if(num%j==0){
 		flag = 1;
@@ -25,4 +25,3 @@ else
 }
 
 }
-
