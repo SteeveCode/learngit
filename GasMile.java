@@ -26,8 +26,8 @@ totalGallon = totalGallon + gallon;
 System.out.println("Enter miles or -1 to exit");
 miles = input.nextInt();
 
-}//while
-totalMpg = (double)totalMiles + totalGallon;
+}
+totalMpg = (double)totalMiles/totalGallon;
 System.out.printf("The combined miles per gallon for all trips is %f\n", totalMpg);
 
 }//end main

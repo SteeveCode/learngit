@@ -12,6 +12,7 @@ public class AllPatterns {
 			}
 			System.out.println();
 			}
+		System.out.println();// line break
 		System.out.println("2nd Pattern - Solution 1");
 		for(int i=10; i>=1; i--) {
 			for(int j=0; j<i; j++) {
@@ -19,6 +20,7 @@ public class AllPatterns {
 			}
 			System.out.println();
 			}
+		System.out.println();// line break
 		System.out.println("2nd Pattern - Solution 2");
 		int size =10;
 		int round =1;
@@ -30,6 +32,7 @@ public class AllPatterns {
 				}++round;
 			System.out.println();
 			}
+		System.out.println();// line break
 		System.out.println("4th Pattern");
 		for(int i=1; i<=size; i++) {
 			for(int j=1; j<size; j++) {
@@ -42,6 +45,7 @@ public class AllPatterns {
 			}
 			System.out.println();
 			}
+		System.out.println();// line break
 		System.out.println("5th Pattern");
 		System.out.print("Enter number of diamond rows:");
 		int odd =1;
@@ -66,7 +70,7 @@ public class AllPatterns {
 			}
 			
 			}
-		
+		System.out.println();// line break
 		System.out.println("6th Pattern");
 			int rowSize =10;
 			int frontSpaces = rowSize - 1; // note: the number of rows for this pattern must be 1 higher than the number white spaces on row 1
@@ -90,6 +94,8 @@ public class AllPatterns {
 				
 				System.out.println();
 			}
+			
+			System.out.println();// line break
 			System.out.println("7th Pattern - Solution 1");
 			
 			// Solution 1 to numeric pattern 7 problem 
@@ -112,7 +118,7 @@ public class AllPatterns {
 				System.out.println();
 			 }
 				System.out.println();
-				System.out.println();
+				System.out.println();// line break
 				
 				System.out.println("7th Pattern - Solution 2");
 				for(int i =1; i<=num; i++) {
@@ -125,6 +131,8 @@ public class AllPatterns {
 					}
 					System.out.println();
 				}
+				
+			System.out.println();// line break
 				System.out.println("8th Pattern");
 		int rowSizes = 9;
 		int rowSpaces = --rowSizes;
@@ -145,6 +153,34 @@ public class AllPatterns {
 			System.out.println();
 			rowSpaces--;
 		}
+		
+		
+		System.out.println();// line break
+		System.out.println("9th Pattern");
+		
+		System.out.println("Enter size of cube");
+		//Scanner input = new Scanner(System.in);
+		int sizeOfCube = input.nextInt();
+
+		for(int i=1; i<= sizeOfCube; i++){
+			if(i==1 || i==sizeOfCube) { // this condition determines how the row should be printed
+				for(int j=1; j<= sizeOfCube; j++) 
+					System.out.print("*");
+			}
+				
+			else {
+				for(int k=1; k<= sizeOfCube; k++) {
+					if(k==1 || k==sizeOfCube) 
+						System.out.print("*");
+					else
+						System.out.print(" ");
+			}
+				
+			}
+			System.out.println();
+
+	}
+
 		
 		}
 		
