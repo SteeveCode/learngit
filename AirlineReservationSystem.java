@@ -15,7 +15,7 @@ public class AirlineReservationSystem {
 		int sclassCounter = 6;
 		int limitA = 5;
 		int limitB = 10;
-		for(int i=0; i<seatArray.length; i++) {
+		for(int i=0;  i<seatArray.length; i++) {
 			seatArray[i] = false;
 			}
 	

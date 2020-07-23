@@ -17,7 +17,9 @@ public class StaticEmpire {
 		System.out.println(country3.findContinent()); //non-static method accessing static variable(This is wrong though it runs)
 		System.out.println();
 		System.out.println(country1.getContinent());//referencing a static method using the object of a class(This is wrong though it runs)
-		
+		System.out.println();
+		System.out.println("Calling a method without creating an object");
+		System.out.println(Empire.getContinent());
 	
 	}
 }
