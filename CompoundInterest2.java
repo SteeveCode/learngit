@@ -1,5 +1,6 @@
 // This code computes the compound interest for a giving number of years using the formula a = p(1+r)^n
 // and the Math.pow() method.
+import java.util.Scanner;
 public class CompoundInterest2 {
 
 	public static void main(String[] args) {
@@ -20,7 +21,5 @@ public class CompoundInterest2 {
 			// display the year and the amount
 			System.out.printf( "%4d%,20.2f\n", year, amount );
 		} // end for
-
 	}
-
 }

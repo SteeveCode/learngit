@@ -9,7 +9,7 @@ public class CompoundInterest1 {
 		int numberOfYears = 10;
 		
 		// display headers
-		System.out.printf( "%s%19s\n", "Year", "Amount on deposit" );
+		System.out.printf( "%s%20s\n", "Year", "Amount on deposit" );
 		
 		// calculate amount on deposit for each of ten years
 		for(int i=1; i<=numberOfYears; i++){
@@ -17,7 +17,7 @@ public class CompoundInterest1 {
 		    double interest = principal * rate;
 		    amount = principal + interest;
 		    principal = amount;
-		    System.out.printf("%4d%,10.2f\n",i,amount);
+		    System.out.printf("%4d%,20.2f\n",i,amount);
 
 		}
 	}
