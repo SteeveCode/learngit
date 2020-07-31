@@ -26,6 +26,8 @@ public class RollDiceArray {
 		 // output each array element's value
 		 for ( int face = 1; face < frequency.length; face++ )
 		 System.out.printf( "%4d%10d\n", face, frequency[ face ] );
+		 System.out.println();
+		 System.out.printf( "%4d%10d\n", 0, frequency[ 0 ] );// to show that index 0 was not affected.
 
 	}// end main
 }// end class RollDie

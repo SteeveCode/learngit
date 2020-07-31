@@ -16,7 +16,7 @@ public class RollDice {
 		int face;// most recently rolled value
 		
 		// tally counts for 6,000,000 rolls of a die
-		for(int counter =1; counter<=6000;counter++) {
+		for(int counter =1; counter<=6000000;counter++) {
 			face = 1 + randomNumber.nextInt(6);
 			// determine roll value 1-6 and increment appropriate counter
 			switch(face) 
@@ -37,6 +37,7 @@ public class RollDice {
 		}// end for
 		
 		System.out.printf("Face\tFrequency\n1\t%d\n2\t%d\n3\t%d\n4\t%d\n5\t%d\n6\t%d",frequency1,frequency2,frequency3,frequency4,frequency5,frequency6);
+		System.out.println();
 	}// end main
 
 }// end class RollDie

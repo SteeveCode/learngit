@@ -1,3 +1,7 @@
+// this code sorts an array of number in descending order. the logic is that you can only compare 
+// two things at a time and then start the comparison from beginning again. The can be achieved
+// by nesting nesting an if statement inside a for-loop, and nesting the for-loop inside a while
+// loop. if your reverse the less than sign, the array is sorted in ascending order.
 import java.util.Scanner;
 
 public class SortedArray {
@@ -39,7 +43,7 @@ public class SortedArray {
 		
 		while(flag) {
 			flag = false;
-			for(int i=0; i<sorted.length-1; i++) {
+			for(int i=0; i<sorted.length-1; i++) { // changing the less than sign to greater than sign on line 42 sorts the array in ascending order
 				if(sorted[i] < sorted[i+1]) {
 					temp = sorted[i];
 					sorted[i] = sorted[i+1];
