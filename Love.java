@@ -1,5 +1,5 @@
-//commandline arguments
-//note: you have to pass in the arguements at run time in command prompt.
+//command line arguments
+//note: you have to pass in the arguments at run time in command prompt.
 
 class Love {
 

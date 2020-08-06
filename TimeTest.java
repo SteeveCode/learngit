@@ -2,14 +2,8 @@ public class TimeTest{
 	
 	public static void main(String[] args) {
 		Time1 time = new Time1();
-		time.setTime(19,23,43);
-		
-		
-		
+		time.setTime(19,23,43);	
 	}
-	
-	
-	
 }
 
 

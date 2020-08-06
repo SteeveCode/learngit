@@ -1,0 +1,70 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.Random;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class SentenceGeneratorJTest {
+
+	String[] article = {"the", "a", "one", "some", "any"};
+	String[] noun = {"boy", "girl", "dog", "town","car"};
+	String[] verb = {"drove", "jumped", "ran", "walked","skipped"};
+	String[] preposition = {"to", "from", "over", "under", "on"};
+	
+	@BeforeEach
+	void setUp() throws Exception {
+	}
+
+	@Test
+	void test() {
+		for(int i=0; i<20; i++)
+			System.out.println(generateSentence());
+	}
+
+	
+	String generateSentence() {
+		StringBuilder sentence = new StringBuilder();
+		String space = " ";
+		Random indexGenerator = new Random();
+		int index = indexGenerator.nextInt(article.length);
+		String word = article[index];
+		char firstLetter = Character.toUpperCase(word.charAt(0));
+		word = word.replace(word.charAt(0), firstLetter);
+		sentence.append(word);
+		sentence.append(space);
+		
+		// add noun
+		index = indexGenerator.nextInt(article.length);
+		word = noun[index];
+		sentence.append(word);
+		sentence.append(space);
+		
+		// add verb
+		word = verb[index];
+		sentence.append(word);
+		sentence.append(space);
+		
+		// add preposition
+		index = indexGenerator.nextInt(article.length);
+		word = preposition[index];
+		sentence.append(word);
+		sentence.append(space);
+		
+		// add article
+		index = indexGenerator.nextInt(article.length);
+		word = noun[index];
+		sentence.append(word);
+		sentence.append(space);
+		
+		// add noun
+		index = indexGenerator.nextInt(article.length);
+		word = noun[index];
+		sentence.append(word);
+		sentence.append(".");
+				
+	
+		return sentence.toString();
+	}
+
+}

@@ -1,5 +1,10 @@
+/* Java textbook example - chapter 7
+Fig. 7.19: GradeBookTest.java
+GradeBookTest creates GradeBook object using a two-dimensional array
+of grades, then invokes method processGrades to analyse them.
+ */
 
-public class GradeBookArray {
+public class ArrayGradeBook {
 
 	
 		// TODO Auto-generated method stub
@@ -9,7 +14,7 @@ public class GradeBookArray {
 		//private int[][] gradesArray=new int[10][3];
 		
 		// two-argument constructor initialises courseName and grades array
-		public GradeBookArray(String name, int[] gradesArray) {
+		public ArrayGradeBook(String name, int[] gradesArray) {
 			
 			courseName = name;// Initialise courseName
 			grades = gradesArray;// store grades

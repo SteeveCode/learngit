@@ -1,10 +1,13 @@
-// this code sorts an array of number in descending order. the logic is that you can only compare 
-// two things at a time and then start the comparison from beginning again. The can be achieved
-// by nesting nesting an if statement inside a for-loop, and nesting the for-loop inside a while
-// loop. if your reverse the less than sign, the array is sorted in ascending order.
+/* this code sorts an array of number in descending order. the logic is that you can only compare  
+ two things at a time and as the for-loop increments, the next two sets are compared. the outer 
+ while loop then start the comparison from beginning again until the elements are properly sorted.
+ this is achieved by nesting nesting an if statement inside a for-loop, and nesting the for-loop 
+ inside a while loop. if your reverse the less than sign, the array is sorted in ascending order.
+*/
+import java.util.Arrays;
 import java.util.Scanner;
 
-public class SortedArray {
+public class ArraySorted {
  
 	static Scanner input = new Scanner(System.in);
 	
@@ -14,23 +17,25 @@ public class SortedArray {
 		printArray(mySorted);
 		
 
-	}
+	}// end main method
 
 	public static int[] getIntegers(int number) {
-		System.out.println("Enter " + number + " integer values:\r");
+		System.out.println("Enter " + number + " integer values:");
 		int[] array = new int[number];
 		for(int i = 0; i<array.length; i++) {
 			array[i] = input.nextInt();
 		}
 		System.out.println();
 		return array;
-	}
+	}// getIntegers method
 	
 	public static void printArray(int[] sortedArray) {
 		for(int i = 0; i<sortedArray.length; i++) {
 			System.out.printf("%d ",sortedArray[i]);
 		}
-	}
+		System.out.println();
+		System.out.println(Arrays.toString(sortedArray));// returns a string representation of array
+	}// printArray method
 	
 	public static int[] sortedArray(int[] array) {
 		int[] sorted = new int[array.length];
@@ -51,8 +56,7 @@ public class SortedArray {
 					flag = true;
 				}
 			}
-			
 		}
 		return sorted;
-	}
-}
+	}// sortedArray method
+}// end class

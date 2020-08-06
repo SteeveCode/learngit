@@ -1,0 +1,9 @@
+Number of print services: 8
+Printer 1 name: Send To OneNote 16
+Printer 2 name: OneNote for Windows 10
+Printer 3 name: Microsoft XPS Document Writer
+Printer 4 name: Microsoft Print to PDF
+Printer 5 name: HP LaserJet Professional M1132 MFP
+Printer 6 name: HP LaserJet MFP M227fdw (Biju)
+Printer 7 name: Fax
+Printer 8 name: Canon iR2004/2204
