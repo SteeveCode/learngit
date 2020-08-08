@@ -14,7 +14,7 @@ public class Sentence {
 		
 		Random random = new Random();
 		int index = random.nextInt(5);
-		
+		char firstLetter;
 		
 		for(int i =1; i<=20; i++) {
 			for(int j =0; j<=0; j++) {
@@ -38,8 +38,18 @@ public class Sentence {
 			
 			
 			for(int s=0; s<sentence.length; s++) {
-			System.out.print(sentence[s] + " ");
-			} System.out.print(".");
+				// this if statement ensures the first word is capitalised.
+				if(s==0) {
+					firstLetter = Character.toUpperCase(sentence[0].charAt(0));
+					sentence[0] = sentence[0].replace(sentence[0].charAt(0), firstLetter);
+					}
+				// this if statement ensures that a full stop(.) comes after the last word.
+				if(s==5)
+					System.out.print(sentence[s] + ".");
+				else 
+					System.out.print(sentence[s] + " ");
+			}
+			
 			System.out.println();
 		}
 		

@@ -1,6 +1,6 @@
 import java.util.stream.IntStream;
 
-public class StreamFilterMapReduce {
+public class LambdaStreamFilterMapReduce {
 
 	public static void main(String[] args) {
 		// sum the tripples of the even integers from 2 to 10
