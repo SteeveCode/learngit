@@ -13,7 +13,7 @@ public class Sentence {
 		
 		
 		Random random = new Random();
-		int index = random.nextInt(5);
+		
 		char firstLetter;
 		
 		for(int i =1; i<=20; i++) {

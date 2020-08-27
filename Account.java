@@ -1,4 +1,6 @@
 public class Account {
+	
+	
 	private double balance; // instance variable that stores the balance
 	// constructor
 	public Account(double initialBalance)
