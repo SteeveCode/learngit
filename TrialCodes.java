@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class TrialCodes {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// 1. code to find the factorial of a given number
+		
 		System.out.print("Enter a number to find its factorial: ");
 		Scanner input = new Scanner(System.in);
 		
@@ -19,15 +20,8 @@ public class TrialCodes {
 		System.out.println("The factorial of "+num+" is "+fac );
 		System.out.println();
 		
-		// prime number.
-		//NOTE: I had a difficult time writing this algorithm. I was trying to test too many condition and statement within an if-else statement. 
-		// 1. I was testing the condition for prime number
-		// 2. Link the "continue statement" and a "is prime number printer statement" in the same block if condition block.
-		// 3. Link the print out a "is not prime number printer statement" and a "break statement".
-		// The eventual solution was initialising a boolean variable "isPrime" to "true" and then test for the condition for prime numbers. I put the 
-		// "continue statement" in the body of the if statement while I reset the boolean value to false if it fails in the body of the else statement.
 		
-		
+		// 2. code to determine if a number is a prime number.
 		
 		boolean isprime = true;
 		
@@ -46,7 +40,19 @@ public class TrialCodes {
 		else
 			System.out.println(num+" is not a prime number");
 		
-		// Calculate the average of N numbers
+		/**NOTE: I had a difficult time writing this algorithm. I was trying to test too many condition and 
+		   statement within an if-else statement. 
+		1. I was testing the condition for prime number
+		2. Link the "continue statement" and a "is prime number printer statement" in the same block if 
+		condition block.
+		3. Link the print out a "is not prime number printer statement" and a "break statement".
+		The eventual solution was initialising a boolean variable "isPrime" to "true" and then test for the 
+		condition for prime numbers. I put the "continue statement" in the body of the if statement while I 
+		reset the boolean value to false if it fails in the body of the else statement.
+		 * **/
+		
+		
+		// 3. code to calculate the average of N numbers
 		
 		System.out.print("Enter a number or -1 to exit: ");
 		int numList = input.nextInt();
@@ -60,14 +66,13 @@ public class TrialCodes {
 		double average = (double)sum/frequency;
 		System.out.println("Average  is "+average);
 		
-		// Code to call a string representation of an object using toString()
+		
+		// 4. Code to call a string representation of an object using toString()
 		StringObj strObj = new StringObj("Bola", "Male", "Banker", 35);
 		//strObj.toString();
 		System.out.println(strObj);
 		System.out.println(strObj.toString());
-		System.out.println("Hello "+strObj);
-		
-		
+		System.out.println("Hello "+strObj);	
 	}
 
 }
