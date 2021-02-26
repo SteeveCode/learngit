@@ -16,6 +16,18 @@ public class Trial2 {
 				}
 			System.out.println();
 				}
+		// code to test if string are truly immutable
+		String tr = "hello";
+		System.out.println(tr.replace('h', 'H')); // returns a new string. variable tr remains unmodified.
+		System.out.println(tr);
+		tr = tr.replace('h', 'H'); // variable tr overridden with new string.
+		System.out.println(tr);
+		char letterL = Character.toUpperCase(tr.charAt(3));
+		
+		System.out.println(tr);
+		String newtr = tr.replace('l', letterL);
+		System.out.println(newtr);
+		System.out.println(letterL);
 
 }
 }
