@@ -1,22 +1,33 @@
-//(Airline Reservations System) A small airline has just purchased a computer for its new automated
-//reservations system. You’ve been asked to develop the new system. You’re to write an application
-//to assign seats on each flight of the airline’s only plane (capacity: 10 seats).
+/** 
+A small airline has just purchased a computer for its new automated reservation system. Write an 
+application to assign seats on each flight of the airline's only plane (capacity: 10 seats).
+Your application should display the following alternatives: 'Please type 1 for First class and please type 
+2 for economy'. If the user types 1, your application should assign a seat in the first class section 
+(seats 1-5), if he types 2 in the economy section ( seats 6-10). Your application should then display a 
+boarding pass indicating the person's seat number and whether it's in the first-class or economy.
+Use a 1 dimensional array of primitive type boolean to represent the seating chart of the plane. Initialize 
+all the elements to false to indicate that all the seats are empty. As each seat is assigned, set the 
+corresponding element of the array to true to indicate that the seat is no longer available. Your application
+should never assign a seat that has already been assigned. When the economy section is full ask the person if 
+it is acceptable to be placed in the first class section and vice versa. If yes make the appropriate seat 
+assignment. If not, display the message 'next flight leaves in 3 hrs.
+ */
 
 import java.util.Scanner;
 public class AirlineReservationSystem {
 
 	public static void main(String[] args) {
-		Boolean [] seatArray = new Boolean[12];
+		Boolean [] seatArray = new Boolean[11]; // create 10 seat numbers (array[0] will not be used).
 		int planeSection;
 		int seatCounterA = 0;
 		int seatCounterB = 0;
 		int loopCounter = 1;
-		int fclassCounter = 1;
-		int sclassCounter = 6;
+		int firstClassCounter = 1;
+		int secondClassCounter = 6;
 		int limitA = 5;
 		int limitB = 10;
 		for(int i=0;  i<seatArray.length; i++) {
-			seatArray[i] = false;
+			seatArray[i] = false; // Empty seat indicated by false
 			}
 	
 		
@@ -29,11 +40,11 @@ public class AirlineReservationSystem {
 		planeSection = input.nextInt();
 		if(planeSection == 1 || planeSection == 2) {
 			if(planeSection == 1){
-					if(seatArray[fclassCounter] != true && fclassCounter <=5) {
-						seatArray[fclassCounter] = true;
+					if(seatArray[firstClassCounter] != true && firstClassCounter <=5) {
+						seatArray[firstClassCounter] = true;
 						seatCounterA++;
-						System.out.println("Your seat number in the firstclass section is "+fclassCounter);
-						fclassCounter++;
+						System.out.println("Your seat number in the firstclass section is "+firstClassCounter);
+						firstClassCounter++;
 						if(seatCounterA == limitA && seatCounterB == limitB)
 							break;
 						}
@@ -52,11 +63,11 @@ public class AirlineReservationSystem {
 			}
 		
 			else {
-					if(seatArray[sclassCounter] != true && sclassCounter <=10) {
-						seatArray[sclassCounter] = true;
+					if(seatArray[secondClassCounter] != true && secondClassCounter <=10) {
+						seatArray[secondClassCounter] = true;
 						seatCounterB++;
-						System.out.println("Your seat number in the economy section is "+sclassCounter);
-						sclassCounter++;
+						System.out.println("Your seat number in the economy section is "+secondClassCounter);
+						secondClassCounter++;
 						if(seatCounterA == limitA && seatCounterB == limitB)
 							break;
 						}
