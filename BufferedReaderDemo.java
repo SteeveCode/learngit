@@ -1,3 +1,5 @@
+// program to read file line by line
+
 import java.io.*;
 
 public class BufferedReaderDemo{

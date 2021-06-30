@@ -18,6 +18,7 @@ public class FileMergeProgram{
       line = br.readLine();
     }
     pw.flush();
+    br.close();
     pw.close();
   }
 }
