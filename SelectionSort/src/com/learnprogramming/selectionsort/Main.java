@@ -1,8 +1,12 @@
-// program to sort an int array using selection sort
-// the selection sort algorithm grows in a quadratic way hence it is very inefficient i.e Big O(n2).
-// each loop corresponds to n. If you have only one loop, then it corresponds to linear time
-// complexity. If you have two loops, it is n * n and that it corresponds to quadratic time complexity.
-// selection sort is an unstable sort. it does not maintain the position of duplicate elements.
+// Program to sort an int array using selection sort.
+/* The selection sort algorithm grows in a quadratic way hence it is very inefficient i.e Big O(n2).
+ Each loop corresponds to n. If you have only one loop, then it corresponds to linear time-
+ complexity. If you have two loops, it is n * n and that it corresponds to quadratic time complexity.
+ Selection sort is an unstable sort. it does not maintain the position of duplicate elements.
+ Selection sort is an in-place algorithm i.e we don't have to create any temporary arrays because as long as-
+ the extra memory we are using doesn't on the number of items we are sorting
+ */
+
 
 package com.learnprogramming.selectionsort;
 
