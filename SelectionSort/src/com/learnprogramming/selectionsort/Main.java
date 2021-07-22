@@ -38,7 +38,8 @@ public class Main {
         for(int i = 0; i < intArray.length; i++){System.out.println(intArray[i]);}
     }
 
-    // static method that does the actual swapping of numbers in an array is defined
+    // static method that does the actual swapping of numbers in th array is defined. the method takes in
+    // an array and two neighbouring index numbers starting from index zero.
     public static void swap ( int[] array, int i, int j ){
         if (i == j)
         {
