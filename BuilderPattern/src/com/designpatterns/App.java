@@ -1,7 +1,7 @@
 package com.designpatterns;
 
-/*
-The builder pattern for building complex objects with lots of constructor parameters. Use cases:
+/* Builder Pattern:
+The builder pattern is used for building complex objects with lots of constructor parameters. Use cases:
 * a. When dealing with a complex object that requires a lot of parameters.
 b. When trying to prevent mistakes from creating a complex object i.e constructor argument order mismatch.
 c. When trying to avoid unreadable codes that is caused by big constructors when we need to create a really complex objects.
