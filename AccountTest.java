@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+// A simple code to credit an account.
+
 public class AccountTest
 	{
 	// main method begins execution of Java application
