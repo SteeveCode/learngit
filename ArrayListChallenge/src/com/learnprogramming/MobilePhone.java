@@ -9,7 +9,6 @@ public class MobilePhone {
     public MobilePhone(String myNumber){
         this.myNumber = myNumber;
         myContacts  = new ArrayList<Contact>();
-
     }
 
     public boolean addNewContact(Contact contact){
@@ -17,7 +16,7 @@ public class MobilePhone {
          System.out.println("Contact is already on file");
          return false;
      }
-        myContacts.add(contact);
+     myContacts.add(contact);
      return true;
     }
 
@@ -26,7 +25,11 @@ public class MobilePhone {
         if(foundPosition < 0 ){
             System.out.println("Contact not found");
             return false;
+        } else if(findContact(newContact.getName()) != -1 ){
+            System.out.println("Contact with " + newContact.getName() + " already exist. Update was not successful.");
+            return false;
         }
+
         this.myContacts.set(foundPosition, newContact);
         System.out.println(oldContact.getName() + " was replaced with "+ newContact.getName());
         return true;
@@ -62,6 +65,14 @@ public class MobilePhone {
         }
         return null;
     }
+
+    public Contact queryContact(String name){
+        int position = findContact(name);
+        if(position >=0){
+            return this.myContacts.get(position);
+        } return null;
+    }
+
     public void printContact(){
         for(int i = 0; i < this.myContacts.size(); i++){
             System.out.println(i + 1 +"."+
