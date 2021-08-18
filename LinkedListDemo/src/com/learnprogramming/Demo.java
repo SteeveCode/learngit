@@ -74,6 +74,7 @@ public class Demo {
     private static void visit(LinkedList cities){
         Scanner scanner = new Scanner(System.in);
         boolean quit = false;
+        boolean goingForward = true;
         ListIterator<String> listIterator = cities.listIterator();
 
         if (cities.isEmpty()){
@@ -92,17 +93,33 @@ public class Demo {
                     quit = true;
                     break;
                 case 1:
+                    // not clear. research tortoise and the hare algorithm problem (14.0 minutes of the video 20)
+                    if(!goingForward){
+                        if(listIterator.hasNext()){
+                            listIterator.next();
+                        }
+                        goingForward = true;
+                    }
                     if(listIterator.hasNext()){
                         System.out.println("Now visiting " + listIterator.next());
                     } else {
                         System.out.println("Reached the end of the list");
+                        goingForward = false;
                     }
                     break;
                 case 2:
+                    // not clear. research tortoise and the hare algorithm problem (14.0 minutes of the video 20)
+                    if(goingForward){
+                        if(listIterator.hasNext()){
+                            listIterator.previous();
+                        }
+                        goingForward = false;
+                    }
                     if(listIterator.hasPrevious()){
                         System.out.println("Now visiting " + listIterator.previous());
                     }else {
                         System.out.println("We are at the start of the list");
+                        goingForward = false;
                     }
                     break;
                 case 3:
