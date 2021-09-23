@@ -41,6 +41,8 @@ public class Main {
     // static method that does the actual swapping of numbers in th array is defined. the method takes in
     // an array and two neighbouring index numbers starting from index zero.
     public static void swap ( int[] array, int i, int j ){
+     // note: this method only does one thing i.e swap positions of array elements. It does not need to test which element is greater or lesser. A test 
+     // condition can be placed before calling the swap method.
         if (i == j)
         {
             return;
